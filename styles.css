@@ -1,0 +1,169 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Plus Jakarta Sans'
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(/webfonts/PlusJakartaSans-Regular.woff);
+}
+
+.nav-container {
+    width: 100%;
+    font-size: 2rem;
+    height: 6rem;
+    position: fixed;
+    align-items:center;
+    text-align: center;
+    left: 0;
+    padding-top: 20px;
+    top: 0;
+    background-color: white;
+    /* border: 5px solid black; */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li {
+    padding: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+#name {
+    margin-right: auto;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+#about {
+    font-size: 1.25rem;
+    padding-top: 10px;
+    
+    /* padding: 0% 0% 0% 10%; */
+}
+
+#about:hover {
+    cursor: pointer;
+    background:linear-gradient(to right, black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    animation: underline 2s ease-in-out .2s;
+    animation-fill-mode: forwards;
+}
+
+#projects {
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+#dropMenu {
+    list-style-type: none;
+    padding-top: 20px;
+    
+    display: none;
+    /* background-color: black; */
+    /* border: 1px solid black; */ */
+    
+}
+
+#projects:hover {
+    cursor: pointer;
+    background:linear-gradient(to right, black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    animation: underline 2s ease-in-out .05s;
+    animation-fill-mode: forwards;
+}
+
+#contact {
+    font-size: 1.25rem;
+    padding-top: 10px;
+    
+}
+
+#contact:hover {
+    cursor: pointer;
+    background:linear-gradient(to right, black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    animation: underline 2s ease-in-out .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline {
+    to {
+      background-size: 60% 2px;
+    }
+}
+
+.scroll-container, .scroll-area {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+.scroll-container {
+    /* overflow: auto; */
+    /* scroll-snap-type: y mandatory; */
+}
+
+.scroll-area {
+    /* scroll-snap-align: start; */
+}
+
+/* #bigbend {
+    border-radius: 100px;
+    width: 50%;
+    height: auto;
+} */
+
+#one {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+#two {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+#three {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+#four {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+#five {
+    width: 100%;
+    font-size: 60px;
+    margin-top: 6rem;
+    }
+
+
+
+
+
