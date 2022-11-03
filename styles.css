@@ -90,6 +90,41 @@ html {
     font-size: 20px;
 }
 
+h3 {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 235px;
+    margin-left: 6%;
+    letter-spacing: .2rem;
+    opacity: 0;
+}
+
+#iAmA{
+    position: absolute;
+    display: flex;
+    left: 18%;
+    top: 450px;
+    font-size: 2.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+    font-size: 20px;
+}
+
+#austin{
+    position: absolute;
+    display: flex;
+    left: 18%;
+    top: 475px;
+    font-size: 2.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+    font-size: 20px;
+}
+
 #about {
     font-size: 1.25rem;
     padding-top: 10px;
@@ -230,7 +265,7 @@ html {
 }
 
 #one p{
-    margin-top: 780px;
+    margin-top: 790px;
     font-size: 1.5rem;
     margin-left: 47%;
     text-align: right;
@@ -240,7 +275,7 @@ html {
 
 #bigBend {
     margin-top: 10%;
-    margin-left: 25%;
+    margin-left: 50%;
     display: block;
     object-fit: cover;
     border-radius: 100px;
@@ -251,7 +286,7 @@ html {
 
 #two {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     font-size: 60px;
 }

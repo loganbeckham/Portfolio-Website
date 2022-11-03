@@ -91,27 +91,44 @@ $(() => {
     // Scroll Animations
     $nameBox = $('#name');
     $titleBox = $('#title');
+    $hiBox = $('h3');
+    $iAmA = $('#iAmA');
+    $austin = $('#austin');
     scrollState = '1';
 
     $('#frame2').scroll(function() {
         let scrollPos = $('#frame2').scrollTop();
         if ((scrollPos > 800) && (scrollState === '1')) {
-            $nameBox.animate({top: '150px'}, 800);
-            $titleBox.animate({top: '205px'}, 800);
+            $nameBox.animate({top: '400px'}, 800);
+            $titleBox.animate({top: '450px'}, 800);
+            $titleBox.animate({left: '20.8%'}, 1000);
+            $hiBox.animate({opacity: '1'}, 800);
+            $iAmA.delay(1700).animate({opacity: '1'}, 800);
+            $austin.delay(1700).animate({opacity: '1'}, 800);
             scrollState = '2';
         } else if ((scrollPos < 800) && (scrollState === '2')) {
             $nameBox.animate({top: '900px'}, 800);
             // $nameBox.animate({opacity: '1'}, 500);
             $titleBox.animate({top: '955px'}, 800);
+            $titleBox.animate({left: '9.9%'}, 1000);
+            $hiBox.animate({opacity: '0'}, 800);
+            $iAmA.animate({opacity: '0'}, 800);
+            $austin.animate({opacity: '0'}, 800);
             scrollState = '1';
         } else if((scrollPos > 1200) && (scrollState === '2')) {
             $nameBox.animate({top: '50px'}, 500);
-            $titleBox.animate({opacity: '0'}, 500);
+            $titleBox.animate({opacity: '0'}, 800);
+            $hiBox.animate({opacity: '0'}, 800);
+            $iAmA.animate({opacity: '0'}, 800);
+            $austin.animate({opacity: '0'}, 800);
             scrollState = '3';
         } else if ((scrollPos < 1200 && (scrollState === '3'))) {
             // $nameBox.animate({opacity: '1'}, 500);
-            $nameBox.animate({top: '150px'}, 800);
-            $titleBox.animate({opacity: '1'}, 500);
+            $nameBox.animate({top: '400px'}, 800);
+            $titleBox.animate({opacity: '1'}, 800);
+            $hiBox.animate({opacity: '1'}, 800);
+            $iAmA.animate({opacity: '1'}, 800);
+            $austin.animate({opacity: '1'}, 800);
             scrollState = '2';
         }
 
