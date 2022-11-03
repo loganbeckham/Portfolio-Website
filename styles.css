@@ -3,12 +3,25 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Plus Jakarta Sans'
+    font-family: 'PPNeueMontral'
 }
 
+html {
+    background-color: rgb(215, 216, 220);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+ }
+
 @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url(/webfonts/PlusJakartaSans-Regular.woff);
+    font-family: 'PPNeueMontral';
+    src: url(/webfonts/PPNeueMontreal-Thin.otf);
+}
+
+.container {
+    background-color: rgb(215, 216, 220);
 }
 
 .nav-container {
@@ -21,7 +34,6 @@
     left: 0;
     padding-top: 20px;
     top: 0;
-    background-color: white;
     /* border: 5px solid black; */
 }
 
@@ -32,16 +44,19 @@
     list-style: none;
     width: 100%;
     transition: all 0.3s ease 0s;
+    margin-top: 1.5%;;
 }
 
 .nav-links li {
     padding: 0px 20px 0px 20px;
     letter-spacing: 1px;
-    word-spacing: 10px;
 }
 
+
 #name {
+    margin-top: 975px;
     margin-right: auto;
+    margin-left: 5%;
 }
 
 #name:hover {
@@ -51,7 +66,6 @@
 #about {
     font-size: 1.25rem;
     padding-top: 10px;
-    
     /* padding: 0% 0% 0% 10%; */
 }
 
@@ -72,28 +86,30 @@
 
 #dropMenu {
     list-style-type: none;
-    padding-top: 20px;
-    
-    display: none;
+    font-size: 1rem;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around;
+
     /* background-color: black; */
-    /* border: 1px solid black; */ */
+    
     
 }
 
 #projects:hover {
     cursor: pointer;
-    background:linear-gradient(to right, black, black);
+    /* background:linear-gradient(to right, black, black);
     background-size: 0% 2px;
     background-repeat: no-repeat;
     background-position: 24px center;
     animation: underline 2s ease-in-out .05s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #contact {
     font-size: 1.25rem;
     padding-top: 10px;
-    
+    margin-right: 5%;
 }
 
 #contact:hover {
@@ -112,55 +128,107 @@
     }
 }
 
-.scroll-container, .scroll-area {
+#frame {
+    height: 100%;
+    /* position: fixed; */
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 6rem;
     width: 100%;
-    font-size: 60px;
-    margin-top: 6rem;
+    /* position: fixed; */
+    top: 0;
 }
 
-.scroll-container {
-    /* overflow: auto; */
-    /* scroll-snap-type: y mandatory; */
+#frame2 {
+    position:fixed;
+    overflow: auto;
+    border: 3.5px solid black;
+    margin-top: 20px;
+    height: 80%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
-.scroll-area {
-    /* scroll-snap-align: start; */
-}
-
-/* #bigbend {
-    border-radius: 100px;
-    width: 50%;
-    height: auto;
+/* #borders {
+    position: fixed;
+    height: 100%;
+    left: 4%;
+    bottom: 40px;
+    padding-top: 6.25rem;
+    right: 50px;
+    mix-blend-mode: difference;
+    pointer-events: none;
 } */
 
+/*  */
+
+
+/* .scroll-container, .scroll-area {
+    width: 100%;
+    font-size: 60px; */
+    /* margin-top: 6rem; */
+    /* position: relative; */
+/* } */
+
+/* .scroll-container { */
+    /* overflow: auto; */
+    /* scroll-snap-type: y mandatory; */
+
+
+/* .scroll-area { */
+    /* scroll-snap-align: start; */
+/* } */
+
 #one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
     font-size: 60px;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+}
+
+#one h1{
+    margin-top: 15%;
+    margin-left: 5%;
+    height: 20%;
+}
+
+#one p{
+
+    font-size: 1.5rem;
+    margin-left: 5%;
+    width: 50%;
+}
+
+#bigBend {
+    margin-top: 10%;
+    display: block;
+    object-fit: cover;
+    border-radius: 100px;
+    width: 40%;
+    height: 50%;
 }
 
 #two {
     width: 100%;
     font-size: 60px;
-    margin-top: 6rem;
+    background-color: aqua;
 }
 
 #three {
     width: 100%;
     font-size: 60px;
-    margin-top: 6rem;
 }
 
 #four {
     width: 100%;
     font-size: 60px;
-    margin-top: 6rem;
 }
 
 #five {
     width: 100%;
     font-size: 60px;
-    margin-top: 6rem;
     }
 
 

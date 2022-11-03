@@ -1,60 +1,61 @@
 $(() => {
 
     // Hover menu 
-    
-    $('#projects').hover(() => {
-        $('#dropMenu').fadeIn(1500);
-        },
-    () => {
-        $('#dropMenu').css('display', 'none');
-    }
-    );
+
+    $('html', 'body').ready(function() {
+        $('#dropMenu').hide();
+    })
+
+    $('#projects').on('click', () => {
+        $('#dropMenu').fadeToggle(700);
+        
+        $('#frame2').on('scroll', () => {
+            $('#dropMenu').fadeOut(); 
+        })
+
+        setTimeout(function() {
+            $('#dropMenu').fadeOut();
+        }, 10000);
+    });
 
 
-
-    // $('#projects').hover(() => {
-    //     $('#dropMenu').css('display', 'inline');
-    // },
-    // () => {
-    //     $('#dropMenu').css('display', 'none');
-    // }
-    // );
 
     // Click to scroll to functions
+    
 
     $("#name").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#one').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#one').offset().top + $('#frame2').scrollTop() -100
     }, 2000);
     });
 
     $("#about").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#one').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#two').offset().top + $('#frame2').scrollTop() -117
     }, 2000,);
     });
 
     $("#drop1").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#two').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#three').offset().top + $('#frame2').scrollTop() -100
     }, 2000);
     });
 
     $("#drop2").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#three').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#four').offset().top + $('#frame2').scrollTop() -100
     }, 2000);
     });
 
     $("#drop3").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#four').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#four').offset().top + $('#frame2').scrollTop() -100
     }, 2000);
     });
 
     $("#contact").on('click', function() {
-        $('html, body').animate({
-            scrollTop: $('#five').offset().top -100
+        $('#frame2').animate({
+            scrollTop: $('#five').offset().top + $('#frame2').scrollTop() -100
     }, 2000);
     });
 
