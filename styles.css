@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'PPNeueMontral'
+    font-family: 'PPNeueMontral';
 }
 
 html {
@@ -17,7 +17,7 @@ html {
 
 @font-face {
     font-family: 'PPNeueMontral';
-    src: url(/webfonts/PPNeueMontreal-Thin.otf);
+    src: url(/webfonts/PPNeueMontreal-Book.otf);
 }
 
 .container {
@@ -54,13 +54,40 @@ html {
 
 
 #name {
-    margin-top: 975px;
-    margin-right: auto;
-    margin-left: 5%;
+    position: absolute;
+    display: flex;
+    left: 6%;
+    top: 150px;
+    font-size: 2.5rem;
+    opacity: 0;
+    /* animation: one 1s linear */
 }
+
+/* @keyframes one {
+    0% {
+        margin-top: 975px;
+    }
+
+    100% {
+        margin-top: 100px;
+    }
+} */
 
 #name:hover {
     cursor: pointer;
+}
+
+#title{
+    position: absolute;
+    display: flex;
+    left: 9.9%;
+    top: 955px;
+    font-size: 2.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+    font-size: 20px;
 }
 
 #about {
@@ -74,7 +101,7 @@ html {
     background:linear-gradient(to right, black, black);
     background-size: 0% 2px;
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 19px center;
     animation: underline 2s ease-in-out .2s;
     animation-fill-mode: forwards;
 }
@@ -98,12 +125,12 @@ html {
 
 #projects:hover {
     cursor: pointer;
-    /* background:linear-gradient(to right, black, black);
+    background:linear-gradient(to right, black, black);
     background-size: 0% 2px;
     background-repeat: no-repeat;
-    background-position: 24px center;
-    animation: underline 2s ease-in-out .05s;
-    animation-fill-mode: forwards; */
+    background-position: 20px center;
+    animation: underline2 2s ease-in-out .05s;
+    animation-fill-mode: forwards;
 }
 
 #contact {
@@ -117,14 +144,26 @@ html {
     background:linear-gradient(to right, black, black);
     background-size: 0% 2px;
     background-repeat: no-repeat;
-    background-position: 24px center;
-    animation: underline 2s ease-in-out .2s;
+    background-position: 21px center;
+    animation: underline3 2s ease-in-out .2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes underline {
     to {
-      background-size: 60% 2px;
+      background-size: 58% 2px;
+    }
+}
+
+@keyframes underline2 {
+    to {
+      background-size: 64% 2px;
+    }
+}
+
+@keyframes underline3 {
+    to {
+      background-size: 64% 2px;
     }
 }
 
@@ -147,6 +186,7 @@ html {
     height: 80%;
     margin-left: 4%;
     margin-right: 4%;
+    scroll-snap-type: y mandatory;
 }
 
 /* #borders {
@@ -165,55 +205,55 @@ html {
 
 /* .scroll-container, .scroll-area {
     width: 100%;
-    font-size: 60px; */
-    /* margin-top: 6rem; */
-    /* position: relative; */
-/* } */
+    font-size: 60px; 
+    margin-top: 6rem; 
+    position: relative;
+} */
 
-/* .scroll-container { */
-    /* overflow: auto; */
-    /* scroll-snap-type: y mandatory; */
+/* .scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+} */
 
-
-/* .scroll-area { */
+/* .scroll-area {
     /* scroll-snap-align: start; */
-/* } */
+/* } */ 
 
 #one {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
-    font-size: 60px;
+    /* font-size: 60px; */
     /* margin-top: 6rem; */
 }
 
-#one h1{
-    margin-top: 15%;
-    margin-left: 5%;
-    height: 20%;
-}
-
 #one p{
-
+    margin-top: 780px;
     font-size: 1.5rem;
-    margin-left: 5%;
+    margin-left: 47%;
+    text-align: right;
     width: 50%;
+
 }
 
 #bigBend {
     margin-top: 10%;
+    margin-left: 25%;
     display: block;
     object-fit: cover;
     border-radius: 100px;
-    width: 40%;
-    height: 50%;
+    width: 30%;
+    min-width: 350px;
+    height: 40%;
 }
 
 #two {
+    display: flex;
+    justify-content: center;
     width: 100%;
     font-size: 60px;
-    background-color: aqua;
 }
 
 #three {
