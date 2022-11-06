@@ -10,19 +10,21 @@ html {
     background-color: rgb(215, 216, 220);
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
- }
-
 @font-face {
     font-family: 'PPNeueMontral';
     src: url(/webfonts/PPNeueMontreal-Book.otf);
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+ }
+
 .container {
     background-color: rgb(215, 216, 220);
 }
+
+/* HEADER */
 
 .nav-container {
     width: 100%;
@@ -34,7 +36,6 @@ html {
     left: 0;
     padding-top: 20px;
     top: 0;
-    /* border: 5px solid black; */
 }
 
 .nav-links {
@@ -52,82 +53,18 @@ html {
     letter-spacing: 1px;
 }
 
-
-#name {
+#diamond {
     position: absolute;
-    display: flex;
-    left: 6%;
-    top: 150px;
-    font-size: 2.5rem;
-    opacity: 0;
-    /* animation: one 1s linear */
-}
-
-/* @keyframes one {
-    0% {
-        margin-top: 975px;
-    }
-
-    100% {
-        margin-top: 100px;
-    }
-} */
-
-#name:hover {
-    cursor: pointer;
-}
-
-#title{
-    position: absolute;
-    display: flex;
-    left: 9.9%;
-    top: 955px;
-    font-size: 2.5rem;
-    opacity: 0;
-    height: 20%;
-    word-spacing: 0rem;
-    letter-spacing: .1rem;
-    font-size: 20px;
-}
-
-h3 {
-    position: absolute;
-    font-size: 25px;
-    margin-top: 235px;
-    margin-left: 6%;
-    letter-spacing: .2rem;
-    opacity: 0;
-}
-
-#iAmA{
-    position: absolute;
-    display: flex;
-    left: 18%;
-    top: 450px;
-    font-size: 2.5rem;
-    opacity: 0;
-    height: 20%;
-    word-spacing: 0rem;
-    letter-spacing: .1rem;
-    font-size: 20px;
-}
-
-#austin{
-    position: absolute;
-    display: flex;
-    left: 18%;
-    top: 475px;
-    font-size: 2.5rem;
-    opacity: 0;
-    height: 20%;
-    word-spacing: 0rem;
-    letter-spacing: .1rem;
-    font-size: 20px;
+    top: 4.5vh;
+    width: 1%;
+    left: 4vw;
+    height: auto;
 }
 
 #about {
     font-size: 1.25rem;
     padding-top: 10px;
+    opacity: 0;
     /* padding: 0% 0% 0% 10%; */
 }
 
@@ -144,18 +81,15 @@ h3 {
 #projects {
     font-size: 1.25rem;
     padding-top: 10px;
+    opacity: 0;
 }
 
 #dropMenu {
     list-style-type: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 2px;
     display: flex;
     justify-content: space-around;
-
-    /* background-color: black; */
-    
-    
 }
 
 #projects:hover {
@@ -172,6 +106,7 @@ h3 {
     font-size: 1.25rem;
     padding-top: 10px;
     margin-right: 5%;
+    opacity: 0;
 }
 
 #contact:hover {
@@ -202,6 +137,8 @@ h3 {
     }
 }
 
+/* Content */
+
 #frame {
     height: 100%;
     /* position: fixed; */
@@ -216,43 +153,13 @@ h3 {
 #frame2 {
     position:fixed;
     overflow: auto;
-    border: 3.5px solid black;
+    border: 1px solid rgb(0, 0, 0);
     margin-top: 20px;
     height: 80%;
     margin-left: 4%;
     margin-right: 4%;
     scroll-snap-type: y mandatory;
 }
-
-/* #borders {
-    position: fixed;
-    height: 100%;
-    left: 4%;
-    bottom: 40px;
-    padding-top: 6.25rem;
-    right: 50px;
-    mix-blend-mode: difference;
-    pointer-events: none;
-} */
-
-/*  */
-
-
-/* .scroll-container, .scroll-area {
-    width: 100%;
-    font-size: 60px; 
-    margin-top: 6rem; 
-    position: relative;
-} */
-
-/* .scroll-container {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-} */
-
-/* .scroll-area {
-    /* scroll-snap-align: start; */
-/* } */ 
 
 #one {
     display: flex;
@@ -264,24 +171,88 @@ h3 {
     /* margin-top: 6rem; */
 }
 
-#one p{
-    margin-top: 790px;
-    font-size: 1.5rem;
-    margin-left: 47%;
+#one h1{
+    display: flex;
+    justify-content: flex-end;
     text-align: right;
-    width: 50%;
-
+    -webkit-text-stroke-width: .05px;
+    margin-left: 60vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 14rem;
+    width: 100%;
+    height: 20%;
 }
 
-#bigBend {
-    margin-top: 10%;
-    margin-left: 50%;
-    display: block;
-    object-fit: cover;
-    border-radius: 100px;
-    width: 30%;
-    min-width: 350px;
-    height: 40%;
+#one p{
+    position: absolute;
+    margin-top: 21vh;
+    font-size: 2.5rem;
+    margin-left: 17vw;
+    /* margin-right: %; */
+    text-align: left;
+    width: 20%;
+}
+
+#name {
+    position: absolute;
+    display: flex;
+    text-align: right;
+    left: 7.5vw;
+    font-size: 3rem;
+    opacity: 0;
+}
+
+#name:hover {
+    cursor: pointer;
+}
+
+#title{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 276.02px;
+    left: 9.5vw;
+    top: 32vh;
+    font-size: 1.5rem;
+    opacity: 0;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+}
+
+#shooting-star {
+    position: absolute;
+    top: -34vh;
+    left: 63vw;
+    width: 5%;
+}
+
+#shooting-star2 {
+    position: absolute;
+    width: 3%;
+    left: 57vw;
+    top: -9vh
+}
+
+#shooting-star3 {
+    position: absolute;
+    width: 2.5%;
+    top: 19vh;
+    left: 58.5vw;
+}
+
+#a1:hover {
+    cursor: pointer;
+}
+
+#b1:hover {
+    cursor: pointer;
+}
+
+#c1:hover {
+    cursor: pointer;
 }
 
 #two {
@@ -290,6 +261,82 @@ h3 {
     width: 100%;
     font-size: 60px;
 }
+
+h3 {
+    position: absolute;
+    font-size: 25px;
+    top: 29vh;
+    margin-left: 16vw;
+    letter-spacing: .2rem;
+    opacity: 0;
+}
+
+#iAmA{
+    position: absolute;
+    display: flex;
+    left: 16vw;
+    top: 38vh;
+    font-size: 1.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+}
+
+#austin{
+    position: absolute;
+    display: flex;
+    left: 26.4vw;
+    top: 38vh;
+    margin-right: 50vw;
+    font-size: 1.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+}
+
+#bio{
+    position: absolute;
+    display: flex;
+    left: 16vw;
+    top: 40vh;
+    text-align: left;
+    margin-right: 57vw;
+    font-size: 1.5rem;
+    opacity: 0;
+    height: 20%;
+    word-spacing: 0rem;
+    letter-spacing: .1rem;
+}
+
+#resume{
+    position: fixed;
+    opacity: 0;
+    top: 57vh;
+    left: 28vw;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 50px;
+    background-color: rgb(215, 216, 220);
+    font-size: 2rem;
+}
+
+#resume:hover {
+    cursor: pointer;
+    background-color: rgb(221, 227, 255);
+}
+
+#bigBend {
+    margin-top: 10%;
+    margin-left: 50%;
+    object-fit: cover;
+    border-radius: 100px;
+    width: 40%;
+    min-width: 350px;
+    height: 50%;
+}
+
 
 #three {
     width: 100%;
@@ -306,6 +353,22 @@ h3 {
     font-size: 60px;
     }
 
+#linkedIn {
+    position: absolute;
+    mix-blend-mode: multiply;
+    right: 1.5vw;
+    width: 38px;
+    top: 80vh;
+    height: auto;
+    }
+    
+#git {
+    position: absolute;
+    top: 84vh;
+    width: 40px;
+    height: auto;
+    right: 1.5vw;
+    }
 
 
 
