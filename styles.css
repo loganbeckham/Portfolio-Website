@@ -85,11 +85,31 @@ html {
 }
 
 #dropMenu {
+    position: fixed;
     list-style-type: none;
     font-size: 1.5rem;
-    padding-top: 2px;
+    padding-top: 20px;
+    width: 85%;
+    height: 5vh;
+    left: 7.5vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#drop1:hover {
+    cursor: pointer;
+}
+
+#drop2:hover {
+    cursor: pointer;
+}
+
+#drop3:hover {
+    cursor: pointer;
+}
+
+#drop4:hover {
+    cursor: pointer;
 }
 
 #projects:hover {
@@ -327,6 +347,14 @@ h3 {
     background-color: rgb(221, 227, 255);
 }
 
+#twoStar {
+    position: fixed;
+    width: 10%;
+    top: -19.8vh;
+    left: 24vw;
+    opacity: 0;
+}
+
 #bigBend {
     margin-top: 10%;
     margin-left: 50%;
@@ -340,18 +368,79 @@ h3 {
 
 #three {
     width: 100%;
-    font-size: 60px;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
 }
 
 #four {
     width: 100%;
-    font-size: 60px;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
 }
 
 #five {
     width: 100%;
-    font-size: 60px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-top: 10vh;
     }
+
+#contactMe {
+    width: 100%;
+    font-size: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    top: 30vh;
+    left: 40vw;
+    height: 100%;
+}
+
+#contactMe {
+    width: 100%;
+    font-size: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    top: 35vh;
+    left: 42.5vw;
+    height: 100%;
+    opacity: 0;
+}
+
+#number {
+    width: 100%;
+    font-size: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    top: 41vh;
+    left: 49.5vw;
+    height: 100%;
+    opacity: 0;
+}
+
+#email {
+    width: 100%;
+    font-size: 2rem;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    top: 38vh;
+    left: 49.5vw;
+    height: 100%;
+    opacity: 0;
+}
 
 #linkedIn {
     position: absolute;
