@@ -45,7 +45,7 @@ html {
     list-style: none;
     width: 100%;
     transition: all 0.3s ease 0s;
-    margin-top: 1.5%;;
+    margin-top: 1.5%;
 }
 
 .nav-links li {
@@ -56,7 +56,7 @@ html {
 #diamond {
     position: absolute;
     top: 4.5vh;
-    width: 1%;
+    width: 30px;
     left: 4vw;
     height: auto;
 }
@@ -176,6 +176,7 @@ html {
     border: 1px solid rgb(0, 0, 0);
     margin-top: 20px;
     height: 80%;
+    width: 92%;
     margin-left: 4%;
     margin-right: 4%;
     scroll-snap-type: y mandatory;
@@ -195,32 +196,34 @@ html {
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    -webkit-text-stroke-width: .05px;
     margin-left: 60vw;
     margin-right: 5vw;
     margin-top: 2vh;
     text-align: left;
-    font-size: 14rem;
+    font-size: 8vw;
     width: 100%;
-    height: 20%;
+    height: 0vh;
+    
 }
 
 #one p{
     position: absolute;
-    margin-top: 21vh;
-    font-size: 2.5rem;
-    margin-left: 17vw;
+    margin-top: 20.95vh;
+    font-size: 1.4vw;
+    /* margin-left: 17vw; */
+    left: 16.5vw;
     /* margin-right: %; */
     text-align: left;
     width: 20%;
 }
 
 #name {
-    position: absolute;
+    position: fixed;
     display: flex;
     text-align: right;
+    height: 1vh;
     left: 7.5vw;
-    font-size: 3rem;
+    font-size: 1.7vw;
     opacity: 0;
 }
 
@@ -233,12 +236,11 @@ html {
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    width: 276.02px;
+    width: 9.7vw;
     left: 9.5vw;
     top: 32vh;
-    font-size: 1.5rem;
+    font-size: .85vw;
     opacity: 0;
-    word-spacing: 0rem;
     letter-spacing: .1rem;
 }
 
@@ -246,21 +248,21 @@ html {
     position: absolute;
     top: -34vh;
     left: 63vw;
-    width: 5%;
+    width: 5vw;
 }
 
 #shooting-star2 {
     position: absolute;
-    width: 3%;
+    width: 3vw;
     left: 57vw;
-    top: -9vh
+    top: -9vh;
 }
 
 #shooting-star3 {
     position: absolute;
-    width: 2.5%;
+    width: 2.5vw;
     top: 19vh;
-    left: 58.5vw;
+    left: 57.8vw;
 }
 
 #a1:hover {
@@ -404,7 +406,7 @@ h3 {
 }
 
 #contactMe {
-    width: 100%;
+    width: 50%;
     font-size: 2rem;
     position: fixed;
     display: flex;
@@ -412,12 +414,12 @@ h3 {
     text-align: left;
     top: 35vh;
     left: 42.5vw;
-    height: 100%;
+    height: 10%;
     opacity: 0;
 }
 
 #number {
-    width: 100%;
+    width: 50%;
     font-size: 2rem;
     position: fixed;
     display: flex;
@@ -425,12 +427,12 @@ h3 {
     text-align: left;
     top: 41vh;
     left: 49.5vw;
-    height: 100%;
+    height: 5%;
     opacity: 0;
 }
 
 #email {
-    width: 100%;
+    width: 50%;
     font-size: 2rem;
     position: fixed;
     display: flex;
@@ -438,7 +440,7 @@ h3 {
     text-align: left;
     top: 38vh;
     left: 49.5vw;
-    height: 100%;
+    height: 10%;
     opacity: 0;
 }
 
@@ -450,6 +452,10 @@ h3 {
     top: 80vh;
     height: auto;
     }
+
+#linkedIn:hover {
+    cursor: pointer;
+}
     
 #git {
     position: absolute;
@@ -458,6 +464,96 @@ h3 {
     height: auto;
     right: 1.5vw;
     }
+
+#git:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+
+.nav-links {
+    padding-top: 20px;
+}
+
+#email {
+    left: 25vw;
+}
+
+#number {
+    left: 25vw;
+}
+
+#contactMe {
+    left: 25vw;
+}
+
+#name {
+    font-size: 2.5rem;
+}
+
+#title {
+    width: 15vw;
+    font-size: 1.3rem;
+    margin-left: 50px;
+}
+
+#one p{
+        margin-top: 21.5vh;
+        width: 20%;
+        left: 25vw;
+
+    }
+
+#bio {
+    font-size: 1rem;
+}
+
+#shooting-star{
+    top: -36vh;
+}
+
+#shooting-star2{
+    top: -10vh;
+}
+
+#shooting-star3{
+    top: 17.5vh;
+}
+}
+
+@media (max-width: 1000px) {
+    #one p{
+        margin-top: 30vh;
+        width: 20%;
+        left: 25vw;
+        font-size: 1rem;
+    }
+
+    #title {
+        width: 20vh;
+    }
+
+/* @media (max-width: 1500px) {
+
+    #one p{
+            margin-top: 20.8vh;
+            width: 30%;
+        }
+    
+    #shooting-star{
+        top: -36vh;
+    }
+    
+    #shooting-star2{
+        top: -10vh;
+    }
+    
+    #shooting-star3{
+        top: 17.5vh;
+    }
+    } */
+
+/* @media (max-height:) */
 
 
 

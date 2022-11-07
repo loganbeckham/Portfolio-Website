@@ -151,9 +151,9 @@ $(() => {
         let scrollPos = $('#frame2').scrollTop();
         if ((scrollPos > 900) && (scrollState === '1')) {
             $nameBox.animate({top: '32vh'}, 800);
-            $nameBox.animate({left: '16vw'}, 1000);
-            $titleBox.animate({top: '38vh'}, 800);
-            $titleBox.animate({left: '16.5vw'}, 1000);
+            $nameBox.animate({left: '15.9vw'}, 1000);
+            $titleBox.animate({top: '37.9vh'}, 800);
+            $titleBox.animate({left: '16.4vw'}, 1000);
             $brand.animate({opacity: '0'}, 800);
             $hiBox.delay(1500).animate({opacity: '1'}, 800);
             $bio.delay(1500).animate({opacity: '1'}, 800);
